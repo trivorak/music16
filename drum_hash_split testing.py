@@ -11,9 +11,10 @@ for x in range(0,instCou):
 
 
 print(percList)
+#print(bin(int(percList[1],16)))
 
-
-
+for x in range(0,instCou):
+  print(bin(int(percList[x],16)))
 
 
 

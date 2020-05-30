@@ -28,9 +28,14 @@ def removebin(binVal):
 def binfntload(binVal):
   return binVal.zfill(4*splLen)
 
+# Reverse each index item
+def revIndex(indexItem):
+  return indexItem[::-1]
 
+# Processing 
 result = map(hex2bin,percList)
 result = map(removebin,result)
 result = map(binfntload,result)
+result = map(revIndex,result)
 
 print(list(result))

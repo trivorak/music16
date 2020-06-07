@@ -1,5 +1,5 @@
 #Default Startup/Test Values test push
-inCache = 'cd1a15ca9c8625415891632403b401f741fbe96e'
+inCache = 'd3aca892d996d534c0fa98ae06d2a46e43836c8e'
 splLen = 2         #Split Length
 instCou = 3         #Instrument Count
 percList = list()   #init var list

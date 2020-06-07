@@ -19,5 +19,7 @@ Current scripts are using
 - Note Triggers then note dictation (binary seq)
 
 ### Code Basics
-Files are just test. **note_seq.py** is the only file that is currently generating sound thru sonic-pi. 
+"**note_seq.py**" is the only file that is currently generating sound thru sonic-pi. 
+
+
 

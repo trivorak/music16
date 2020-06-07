@@ -1,8 +1,7 @@
-from time import sleep
 from psonic import *
 
 #Default Startup/Test Values
-inCache = 'cd1a15ca9c8625415891632403b401f741fbe96e'
+inCache = 'd3aca892d996d534c0fa98ae06d2a46e43836c8e'
 noteList = list(inCache)
 
 #print(noteList)

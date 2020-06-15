@@ -39,3 +39,6 @@ result = map(binfntload,result)
 result = map(revIndex,result)
 
 print(list(result))
+
+result = (result)
+print(result)

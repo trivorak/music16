@@ -7,6 +7,7 @@ Current scripts are using
 - Python 3 
 - [Sonic Pi](https://sonic-pi.net/) (Version 3.1.0 on OSX)
 - [Python-Sonic](https://github.com/gkvoelkl/python-sonic)
+- [MIDIUtil](https://pypi.org/project/MIDIUtil/)
 
 ## Plans
 

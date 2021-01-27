@@ -1,8 +1,20 @@
 from psonic import *
+from midiutil import MIDIFile
 
 #Default Startup/Test Values
 inCache = 'd3aca892d996d534c0fa98ae06d2a46e43836c8e'
 noteList = list(inCache)
+
+track = 0
+channel = 0
+time = 0
+duration = 1
+tempo = 60
+volume = 100
+
+MyMIDI = MIDIFile(1)
+MyMIDI.addTempo(track,time,tempo)
+
 
 #print(noteList)
 #print(len(noteList))
@@ -43,7 +55,13 @@ def lookupNote(n):
     return 51
   
 
-for x in range(0,len(noteList)):
+""" for x in range(0,len(noteList)):
   play(lookupNote(noteList[x])+12)
-  sleep(0.25)
+  sleep(0.25) """
   
+for x in range(0,len(noteList)):
+  MyMIDI.addNote(track, channel, lookupNote(noteList[x]), time, duration, volume)
+  time = time + 1
+
+with open("trail_midi.mid", "wb") as output_file:
+    MyMIDI.writeFile(output_file)

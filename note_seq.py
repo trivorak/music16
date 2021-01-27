@@ -63,5 +63,5 @@ for x in range(0,len(noteList)):
   MyMIDI.addNote(track, channel, lookupNote(noteList[x]), time, duration, volume)
   time = time + 1
 
-with open("trail_midi.mid", "wb") as output_file:
+with open("trial_midi.mid", "wb") as output_file:
     MyMIDI.writeFile(output_file)

@@ -1,12 +1,10 @@
 # Music 16
 ## Idea
-Using Sonic-Pi in conjuntion with python-sonic to generate music. The "music" is generated with the 40 character hash from github commits.
+The midi files are generated with the 40 character hash from github commits.
 
 
 Current scripts are using 
 - Python 3 
-- [Sonic Pi](https://sonic-pi.net/) (Version 3.1.0 on OSX)
-- [Python-Sonic](https://github.com/gkvoelkl/python-sonic)
 - [MIDIUtil](https://pypi.org/project/MIDIUtil/)
 
 ## Plans
@@ -20,7 +18,7 @@ Current scripts are using
 - Note Triggers then note dictation (binary seq)
 
 ### Code Basics
-"**note_seq.py**" is the only file that is currently generating sound thru sonic-pi. 
+"**note_seq.py**" is the only file that is currently generating midi files
 
 
 

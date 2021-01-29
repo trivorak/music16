@@ -1,9 +1,10 @@
-from psonic import *
 from midiutil import MIDIFile
 
 #Default Startup/Test Values
 inCache = 'd3aca892d996d534c0fa98ae06d2a46e43836c8e'
 noteList = list(inCache)
+scaleList = [0,2,3,5,7,9,11,12]
+rootNote = 36
 
 track = 0
 channel = 0
@@ -16,10 +17,13 @@ MyMIDI = MIDIFile(1)
 MyMIDI.addTempo(track,time,tempo)
 
 def lookupNote(n):
-  return 36 + int(n,16)
+  return int(n,16)
   
+# for x in range(0,len(noteList)):
+#     print(scaleList[lookupNote(noteList[x])%8]+rootNote)
+
 for x in range(0,len(noteList)):
-  MyMIDI.addNote(track, channel, lookupNote(noteList[x]), time, duration, volume)
+  MyMIDI.addNote(track, channel, scaleList[lookupNote(noteList[x])%8]+rootNote, time, duration, volume)
   time = time + 1
 
 with open("trial_midi.mid", "wb") as output_file:

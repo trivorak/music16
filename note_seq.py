@@ -23,7 +23,15 @@ def lookupNote(n):
 #     print(scaleList[lookupNote(noteList[x])%8]+rootNote)
 
 for x in range(0,len(noteList)):
-  MyMIDI.addNote(track, channel, scaleList[lookupNote(noteList[x])%8]+rootNote, time, duration, volume)
+  noteReturn = lookupNote(noteList[x])
+  scaleReturn = scaleList[noteReturn%8]
+
+  if scaleReturn != noteReturn:
+    rootNoteOffset = 12 + rootNote
+  else:
+    rootNoteOffset = rootNote
+
+  MyMIDI.addNote(track, channel, scaleReturn+rootNoteOffset, time, duration, volume)
   time = time + 1
 
 with open("trial_midi.mid", "wb") as output_file:

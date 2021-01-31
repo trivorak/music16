@@ -29,7 +29,6 @@ for x in range(0,len(noteList)):
 
   MyMIDI.addNote(track, channel, scaleReturn+rootNoteOffset, time, duration, volume)
   time = time + 1
-  print(scaleReturn+rootNoteOffset)
   
 with open(midiFileName, "wb") as output_file:
     MyMIDI.writeFile(output_file)

@@ -9,7 +9,6 @@ Current scripts are using
 
 ## Plans
 
-- Add a percussion
 - Automatically pull hash from github (or make it less manual)
 - Make muliple rule sets
 - Make a bit more modular (code base not sythesis)

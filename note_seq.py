@@ -2,8 +2,7 @@ from midiutil import MIDIFile
 import math
 
 #Default Startup/Test Values
-
-inCache = 'd3aca892d996d534c0fa98ae06d2a46e43836c8e'
+inCache = input("Please enter a hex string: ")
 noteList = list(inCache)
 scaleList = [0,2,3,5,7,9,11]
 rootNote = 36

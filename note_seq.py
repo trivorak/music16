@@ -20,7 +20,9 @@ MyMIDI.addTempo(track,time,tempo)
 
 def lookupNote(n):
   return int(n,16)
-  
+
+rootNote = lookupNote(inCache[0]) - 8 + rootNote
+
 for x in range(0,len(noteList)):
   noteReturn = lookupNote(noteList[x])
   scaleReturn = scaleList[noteReturn%len(scaleList)]

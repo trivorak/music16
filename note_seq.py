@@ -6,7 +6,7 @@ inCache = input("Please enter a hex string: ")
 noteList = list(inCache)
 scaleList = [0,2,3,5,7,9,11]
 rootNote = 36
-midiFileName = inCache[:8]+"-m16.mid"
+midiFileName = inCache[:8]+".mid"
 
 track = 0
 channel = 0

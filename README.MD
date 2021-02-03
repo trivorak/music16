@@ -9,15 +9,15 @@ Current scripts are using
 
 ## Install
 
- Clone repo and cd into the main directory
- install requirements using `pip install -r requirements.txt`
+-Clone repo and cd into the main directory
+-install requirements using `pip install -r requirements.txt`
 
 
 ## Usage 
 
  run `python ./note_seq.py`
- You will be prompt for a hex code and your desired scale.
- The script will export a midi file that needs to brought into a DAW or audio software
+-You will be prompt for a hex code and your desired scale.
+-The script will export a midi file that needs to brought into a DAW or audio software
 
 
 ## Plans

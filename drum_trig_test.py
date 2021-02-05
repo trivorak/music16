@@ -16,7 +16,6 @@ perc2 = list('00110101')
 perc3 = list('00010101')
 
 
-
 for x in range(0, len(perc1)):
   if int(perc1[x]) == 1:
      MyMIDI.addNote(track, channel, 36, time, duration, volume)

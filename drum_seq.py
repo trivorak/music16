@@ -10,7 +10,7 @@ volume = 100
 MyMIDI = MIDIFile(1)
 MyMIDI.addTempo(track,time,tempo)
 
-inCache = input("Please enter a hex string: ")
+inCache = input(str("Please enter a hex string: "))
 splLen = 4          #Split Length
 instCou = 3         #Instrument Count
 percList = list()   #init var list
@@ -46,9 +46,9 @@ perc2 = list(hex2drumBin(percList[1]))
 perc3 = list(hex2drumBin(percList[2]))
 
 # Print Test
-# print(perc1)
-# print(perc2)
-# print(perc3)
+print(perc1)
+print(perc2)
+print(perc3)
 
 for x in range(0, len(perc1)):
   if int(perc1[x]) == 1:

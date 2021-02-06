@@ -19,6 +19,10 @@ Current scripts are using
 - You will be prompt for a hex code and your desired scale.
 - The script will export a midi file that needs to brought into a DAW or audio software
 
+- run `python ./drum_seq.py'
+- Input your hex string
+- Script will generate Midi file.
+
 
 ## Plans
 
@@ -30,7 +34,7 @@ Current scripts are using
 - Note Triggers then note dictation (binary seq)
 
 ### Code Basics
-"**note_seq.py**" is the only file that is currently generating midi files
+"**note_seq.py**" & "**drum_seq.py**" are the only files that are currently generating midi files
 
 
 

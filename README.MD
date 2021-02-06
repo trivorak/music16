@@ -21,7 +21,7 @@ Current scripts are using
 
 -----------------------------------
 
- run `python ./drum_seq.py'
+ run `python ./drum_seq.py`
 - Input your hex string
 - Script will generate Midi file.
 

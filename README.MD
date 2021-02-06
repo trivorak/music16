@@ -19,7 +19,9 @@ Current scripts are using
 - You will be prompt for a hex code and your desired scale.
 - The script will export a midi file that needs to brought into a DAW or audio software
 
-- run `python ./drum_seq.py'
+-----------------------------------
+
+ run `python ./drum_seq.py'
 - Input your hex string
 - Script will generate Midi file.
 

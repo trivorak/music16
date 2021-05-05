@@ -45,8 +45,8 @@ midiFileName = inCache[:8]+".mid"
 track = 0
 channel = 0
 time = 0
-duration = 1
-tempo = 60
+duration = 0.25
+tempo = 110
 volume = 100
 
 MyMIDI = MIDIFile(1)
@@ -64,7 +64,7 @@ for x in range(0,len(noteList)):
   rootNoteOffset = (math.floor(noteReturn / len(scaleList))*12)+rootNote
 
   MyMIDI.addNote(track, channel, scaleReturn+rootNoteOffset, time, duration, volume)
-  time = time + 1
+  time = time + 0.25
   
 with open(midiFileName, "wb") as output_file:
     MyMIDI.writeFile(output_file)

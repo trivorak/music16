@@ -35,6 +35,8 @@ print("Please Select Your Scale (0 - 10):    ")
 
 scaleSelect = input("")
 
+#Set Instrument Based on (Hex String Length * Hex2Int Conv) % 128
+instrumentSelect = (len(inCache) * int(inCache,16) % 128)
 
 #Default Startup/Test Values
 noteList = list(inCache)
@@ -51,6 +53,7 @@ volume = 100
 
 MyMIDI = MIDIFile(1)
 MyMIDI.addTempo(track,time,tempo)
+MyMIDI.addProgramChange(track,channel,time,instrumentSelect)
 
 def lookupNote(n):
   return int(n,16)

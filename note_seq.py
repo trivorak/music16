@@ -1,7 +1,6 @@
 from midiutil import MIDIFile
 import math
 
-#Test Push Sublime-Merge
 
 #Hex String Input
 inCache = input("Please enter a hex string: ")

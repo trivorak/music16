@@ -28,7 +28,7 @@ Current scripts are using
 - Tie consecutive notes together as one long note
 - Hex dictates Tempo
 - Hex dictates Note duration
-- Make muliple rule sets
+- Make multiple rule sets
 
 ### Code Basics
 "**note_seq.py**" is the only file that is currently generating midi files

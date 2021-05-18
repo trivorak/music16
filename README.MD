@@ -15,7 +15,7 @@ Current scripts are using
 
 ## Usage 
 
- run `python ./note_seq.py`
+ run `python3 ./note_seq.py`
 -You will be prompt for a hex code and your desired scale.
 -The script will export a midi file that needs to brought into a DAW or audio software
 
@@ -23,11 +23,12 @@ Current scripts are using
 ## Plans
 
 - Automatically pull hash from github (or make it less manual)
+- "DRY" Code. Break apart into different files (Math, String Manipulation, Midi file export)
+- Add arguments to python scripts to turn off features
+- Tie consecutive notes together as one long note
+- Hex dictates Tempo
+- Hex dictates Note duration
 - Make muliple rule sets
-- Make a bit more modular (code base not sythesis)
-- Play notes in a key/mode based on the hash (the same hash should generate the same audio months later)
-- Multi-hash (generation)
-- Note Triggers then note dictation (binary seq)
 
 ### Code Basics
 "**note_seq.py**" is the only file that is currently generating midi files
